@@ -1,0 +1,12 @@
+import time
+num = int(input('Digite o número no qual deseja conhecer o fatorial: '))
+cont = num
+fat = 1
+print('Calculando o fatorial de {}! = '.format(num), end='')
+while cont > 0:
+    print('{}'.format(cont), end='')
+    print(' x ' if cont > 1 else ' = ', end='')
+    fat = fat * cont
+    cont = cont - 1
+    time.sleep(0.5)
+print('{}'.format(fat))
